@@ -1,0 +1,279 @@
+* {
+	font-family: 'Be Vietnam', sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+html {
+    height: 100%;
+    padding: 0;
+	margin: 0;
+}
+body {
+    min-height: 100%;
+	padding:  0;
+    margin: 0; /* This will stop the margin, setting it to 0 */
+    
+
+}
+header {
+	margin-right: 10vw;
+    margin-left: 10vw;
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/*position: fixed;*/
+	top: 0;
+	padding: 5px;
+	height: 10vw;
+	margin-top: 8vw;
+/*	padding-right: 50px;
+	padding-left: 50px;*/
+	
+	align-content: center;
+}
+
+li {
+	display: inline;
+	text-decoration: none;
+	padding: 10px;
+}
+main {
+	margin-right: 10vw;
+    margin-left: 10vw;
+	/*margin-top: 10vw;*/
+}
+button {
+	background-color:hsl(12, 88%, 59%);
+	color: white;	
+	padding: 10px 30px;
+	border: none;
+	border-radius: 100px ;
+	font-weight: 700;
+}
+button.white{
+	background-color: white;
+	color: hsl(12, 88%, 59%);	
+}
+input {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 100px ;
+	font-weight: 700;
+	color:  hsl(227, 12%, 61%);
+}
+input:focus{
+    outline: none;
+    color:  hsl(227, 12%, 61%);
+}
+.welcome {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	
+}
+.welcome-text h1 {
+	font-size: 4rem;
+	font-weight: 700;
+	color:  hsl(228, 39%, 23%);
+	line-height: 110%;
+}
+
+.welcome-img {
+	width: 50%;
+}
+
+.welcome-text {
+	width: 50%;
+}
+.welcome-text p {
+	color: hsl(227, 12%, 61%);
+	width: 80%;
+	padding-top: 50px;
+
+}
+.welcome-text button {
+	margin-top: 50px;
+}
+.features {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.features-1 {
+	width: 50%;
+	/*padding-right: 20%;*/
+}
+.features-1 h1 {
+	font-size: 3rem;
+	color: hsl(228, 39%, 23%);
+	font-weight: 700;
+	padding: 10px;
+	line-height: 110%;
+}
+.features-1 p {
+	color: hsl(227, 12%, 61%);
+	padding: 10px;
+	padding-right: 20%;
+}
+.features-2 {
+	width: 50%;
+}
+.features-item {
+	margin: 10px;
+}
+.item-title {
+	display: flex;
+	flex-direction: row;
+
+}
+.item-title span{
+	background-color:hsl(12, 88%, 59%);
+	color: white;	
+	padding: 10px;
+	text-align: center;
+	border: none;
+	border-radius: 100px ;
+	font-weight: 700;
+	width: 70px;
+	margin: 10px;
+}
+
+.item-title p {
+	color: hsl(228, 39%, 23%);
+	padding: 10px;
+	font-weight: 700;
+	margin: 10px;
+}
+
+.item-desc {
+	margin-left:  100px;
+	padding: 10px;
+	color: hsl(227, 12%, 61%);
+}
+.testimonials-wrap {
+	text-align: center;
+}
+.testimonials {
+	display: flex;
+	/* Hide scrollbar for IE, Edge and Firefox */
+	overflow-x: hidden;
+
+}
+.testimonials:hover {
+  overflow-x:  scroll;
+}
+/*/* Hide scrollbar for Chrome, Safari and Opera 
+.testimonials::-webkit-scrollbar {
+  width: 1px;
+}*/
+
+.testimonials-title {
+	width: 100%;
+	padding-top: 50px;
+	text-align: center;
+}
+.testimonials-title h1 {
+	color: hsl(228, 39%, 23%);
+	padding: 10px;
+	font-size: 3rem;
+	font-weight: 700;
+}
+.testimonial {
+	background-color: hsl(0, 0%, 98%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 30vw;
+	padding: 20px;
+	margin: 20px;
+}
+.testimonial img {
+	width: 80px;
+	height: 80px;
+}
+.quote {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: hsl(12, 88%, 59%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 10vw;
+    padding-left: 10vw;
+}
+.quote p {
+	font-size: 2rem;
+	font-weight: 700;
+	color: white;
+}
+.footer {
+	background-color: black;
+	padding-right: 10vw;
+    padding-left: 10vw;
+    width: 100%;
+    padding-top: 50px;
+	padding-bottom: 50px;
+	color: white;
+	display: table;	
+	direction: rtl;
+}
+#newsletter {
+	width: 25%;
+	height: inherit;
+	display: table-cell;
+	text-align: center;
+	direction: ltr;
+}
+
+#menu-footer {
+	height: 100%;
+	display: table-cell;
+	direction: ltr;
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-around;*/
+	
+}
+#menu-footer ul {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 50px;	
+}
+.icons-footer {
+	display: table-cell;
+	width: 25%;
+	direction: ltr;
+	position: relative;
+	
+}
+
+.icons-logo {
+	
+}
+
+.icons-social {
+	position: absolute;
+	bottom: 0px;
+}
+.icons-social img {
+	margin: 10px;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
