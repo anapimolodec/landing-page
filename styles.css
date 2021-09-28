@@ -11,6 +11,7 @@ html {
     height: 100%;
     padding: 0;
 	margin: 0;
+
 }
 body {
     min-height: 100%;
@@ -42,6 +43,7 @@ li {
 	display: inline;
 	text-decoration: none;
 	padding: 10px;
+	font-size: 1.5rem;
 }
 main {
 	margin-right: 10vw;
@@ -55,6 +57,8 @@ button {
 	border: none;
 	border-radius: 100px ;
 	font-weight: 700;
+	font-size: 1.5rem;
+
 }
 button.white{
 	background-color: white;
@@ -66,6 +70,7 @@ input {
 	border-radius: 100px ;
 	font-weight: 700;
 	color:  hsl(227, 12%, 61%);
+	font-size: 1.5rem;
 }
 input:focus{
     outline: none;
@@ -89,7 +94,9 @@ input:focus{
 .welcome-img {
 	width: 50%;
 }
-
+.welcome-img img {
+	width: 100%;
+}
 .welcome-text {
 	width: 50%;
 }
@@ -167,16 +174,17 @@ input:focus{
 .testimonials {
 	display: flex;
 	/* Hide scrollbar for IE, Edge and Firefox */
-	overflow-x: hidden;
+	overflow-x: auto;
+	
 
 }
-.testimonials:hover {
-  overflow-x:  scroll;
-}
-/*/* Hide scrollbar for Chrome, Safari and Opera 
 .testimonials::-webkit-scrollbar {
-  width: 1px;
-}*/
+    width: 3px;
+}
+.testimonials::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 98%);
+  outline: 1px solid hsl(0, 0%, 98%);
+}
 
 .testimonials-title {
 	width: 100%;
@@ -203,17 +211,33 @@ input:focus{
 	width: 80px;
 	height: 80px;
 }
+
+.testimonials-wrap button {
+	margin: 50px;
+}
 .quote {
 	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: hsl(12, 88%, 59%);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	padding-right: 10vw;
     padding-left: 10vw;
+
+    
+   
+}
+
+.bg-pattern {
+	background: 
+    linear-gradient(
+      hsl(12, 88%, 59%), 
+      hsl(12, 88%, 59%)
+    )    
+    ,
+   url('./images/bg-tablet-pattern.svg');
 }
 .quote p {
 	font-size: 2rem;
@@ -237,8 +261,17 @@ input:focus{
 	display: table-cell;
 	text-align: center;
 	direction: ltr;
+	
 }
+#newsletter .news-wrap {
+	display: flex;
+	flex-direction: column;
 
+}
+.news-input {
+	display: flex;
+	flex-direction: row;
+}
 #menu-footer {
 	height: 100%;
 	display: table-cell;
@@ -277,3 +310,14 @@ input:focus{
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+.bg-oval {
+    z-index: -1;
+    position: absolute;
+    width: 1000px;
+}
+
+p {
+font-size: 1.5rem;
+
+}
