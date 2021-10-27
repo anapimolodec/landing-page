@@ -22,9 +22,13 @@ header {
 	margin-top: 8vw;
 	align-content: center;
 }
-a {
+nav ul li a {
 	text-decoration: none;
+	color:  hsl(233, 12%, 13%);}
+nav ul li a:hover {
+	color: hsl(227, 12%, 61%);
 }
+
 ul li {
 	display: inline;
 	text-decoration: none;
@@ -37,57 +41,54 @@ a.button {
 	border-radius: 100px ;
 	font-weight: 700;
 	padding: 10px 30px;
-	
+	text-decoration: none;
+}
+
+a.button:hover{
+	background-color: #f98f75;
 
 }
 a.white{
 	background-color: white;
 	color: hsl(12, 88%, 59%);	
 }
-input {
-	padding: 10px 20px;
-	border: none;
-	border-radius: 100px ;
-	font-weight: 700;
-	color:  hsl(227, 12%, 61%);
+a.white:hover{
+	color:  #f98f75;
+	background-color: white;
 }
-input:focus{
-    outline: none;
-    color:  hsl(227, 12%, 61%);
-}
+
 
 .welcome {
 	margin-top: 50px;
 	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
+	justify-content: space-between;
 	align-items: center;
 	padding-right: 10vw;
     padding-left: 10vw;
 	
 }
-h1 {
-	font-weight: 700;
-	color:  hsl(228, 39%, 23%);
-	line-height: 110%;
-}
+
 
 .welcome-img {
 	width: 50%;
 }
 
 .welcome-text {
-	width: 50%;
+	width: 40%;
 }
-.welcome-text h2, p{
+h1 {
+	font-weight: 700;
+	color:  hsl(228, 39%, 23%);
+	font-size: 3rem;
+}
+.welcome-text p {
 	color: hsl(227, 12%, 61%);
 	width: 80%;
 	padding-top: 50px;
 }
 
-.welcome-text a.button {
-	margin-top: 50px;
-}
 .features {
 	margin-top: 50px;
 	width: 100%;
@@ -96,15 +97,14 @@ h1 {
 	padding-right: 10vw;
     padding-left: 10vw;
 
-
 }
 
 .features-1 {
 	width: 50%;
-	/*padding-right: 20%;*/
+	
 }
-.features-1 h2 {
-	font-size: 3rem;
+h2 {
+	font-size: 2.5rem;
 	color: hsl(228, 39%, 23%);
 	font-weight: 700;
 	padding: 10px;
@@ -121,13 +121,13 @@ h1 {
 
 ol {
 	margin: 0;
-  padding: 0;
-  list-style-type: none;
+    padding: 0;
+    list-style-type: none;
 }
 
-li {
-	 counter-increment: step-counter;
-  margin-bottom: 10px;
+ol li {
+	counter-increment: step-counter;
+    margin-bottom: 10px;
 }
 ol li::before {
   position: absolute;
@@ -148,7 +148,6 @@ ol li::before {
 	color: hsl(228, 39%, 23%);
 	padding: 10px;
 	font-weight: 700;
-	
 }
 
 .features-item p {
@@ -163,8 +162,7 @@ ol li::before {
 	display: flex;
 	/* Hide scrollbar for IE, Edge and Firefox */
 	overflow-x: auto;
-	
-
+	height: fit-content;
 }
 .testimonials::-webkit-scrollbar {
     width: 3px;
@@ -179,29 +177,48 @@ ol li::before {
 	padding-top: 50px;
 	text-align: center;
 }
-.testimonials-title h1 {
-	color: hsl(228, 39%, 23%);
-	padding: 10px;
-	font-size: 3rem;
-	font-weight: 700;
-}
 .testimonial {
 	background-color: hsl(0, 0%, 98%);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	min-width: 30vw;
-	padding: 20px;
+	padding-top: 50px;
 	margin: 20px;
-}
-.testimonial img {
-	width: 80px;
-	height: 80px;
+	margin-top: 50px;
 }
 
+figcaption {
+    color: hsl(228, 39%, 23%);
+	padding: 10px;
+}
+figure:before {
+	transform: scale(.6);
+    display: inline-block;
+    position: relative;
+    height: 0px;
+    top: -100px;
+}
+figure.t-1:before {
+	content: url("./images/avatar-anisha.png");
+}
+figure.t-2:before {
+	content: url("./images/avatar-ali.png");
+}
+figure.t-3:before {
+	content: url("./images/avatar-richard.png");
+}
+figure.t-4:before {
+	content: url("./images/avatar-shanai.png");
+}
+blockquote {
+	padding: 10px;
+	min-height: 120px;
+}
 .testimonials-wrap button {
 	margin: 50px;
+
 }
 .quote {
 	width: 100%;
@@ -213,9 +230,7 @@ ol li::before {
 	justify-content: space-between;
 	padding-right: 10vw;
     padding-left: 10vw;
-
-    
-   
+ 
 }
 
 .bg-pattern {
@@ -232,7 +247,7 @@ ol li::before {
 	font-weight: 700;
 	color: white;
 }
-.footer {
+footer {
 	background-color: black;
 	padding-right: 10vw;
     padding-left: 10vw;
@@ -243,6 +258,19 @@ ol li::before {
 	display: table;	
 	direction: rtl;
 }
+input {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 100px ;
+	font-weight: 700;
+	color:  hsl(227, 12%, 61%);
+	margin: 0px 10px 0 10px;
+}
+input:focus{
+    outline: none;
+    color:  hsl(227, 12%, 61%);
+}
+
 #newsletter {
 	width: 25%;
 	height: inherit;
@@ -261,20 +289,18 @@ ol li::before {
 	flex-direction: row;
 }
 #menu-footer {
-	height: 100%;
-	display: table-cell;
+	display: table;	
 	direction: ltr;
-	display: flex;
-	flex-direction: row;
-	/*justify-content: space-around;*/
-	
+	float: left;
 }
 #menu-footer ul {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	width: 50%;
 	padding-left: 10px;
 	padding-right: 50px;	
+	flex-wrap: wrap;
+
 }
 .icons-footer {
 	display: table-cell;
@@ -306,6 +332,6 @@ ol li::before {
 }
 
 p {
-font-size: 1.5rem;
+font-size: 1rem;
 
 }
