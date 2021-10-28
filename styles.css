@@ -255,8 +255,8 @@ footer {
     padding-top: 50px;
 	padding-bottom: 50px;
 	color: white;
-	display: table;	
-	direction: rtl;
+	display: flex;
+	flex-direction: column;
 }
 input {
 	padding: 10px 20px;
@@ -302,25 +302,7 @@ input:focus{
 	flex-wrap: wrap;
 
 }
-.icons-footer {
-	display: table-cell;
-	width: 25%;
-	direction: ltr;
-	position: relative;
-	
-}
 
-.icons-logo {
-	
-}
-
-.icons-social {
-	position: absolute;
-	bottom: 0px;
-}
-.icons-social img {
-	margin: 10px;
-}
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -334,4 +316,33 @@ input:focus{
 p {
 font-size: 1rem;
 
+}
+
+
+footer .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  height: 100px;
+}
+
+
+.icons-social ul li a {
+	width: 20px;}
+.icons-social ul li a:hover{
+	color: hsl(12, 88%, 59%);
+}
+svg {
+	fill: white;
+}
+svg:hover {
+	fill: hsl(12, 88%, 59%);
 }
