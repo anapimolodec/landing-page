@@ -22,11 +22,11 @@ header {
 	margin-top: 8vw;
 	align-content: center;
 }
-nav ul li a {
+a {
 	text-decoration: none;
 	color:  hsl(233, 12%, 13%);}
-nav ul li a:hover {
-	color: hsl(227, 12%, 61%);
+a:hover {
+color: hsl(227, 12%, 61%);
 }
 
 ul li {
@@ -257,6 +257,10 @@ footer {
 	color: white;
 	display: flex;
 	flex-direction: column;
+	min-height:  300px;
+}
+footer > .row {
+	height: 200px;
 }
 input {
 	padding: 10px 20px;
@@ -288,35 +292,35 @@ input:focus{
 	display: flex;
 	flex-direction: row;
 }
-#menu-footer {
-	display: table;	
-	direction: ltr;
-	float: left;
-}
-#menu-footer ul {
-	width: 100%;
+
+#footer-menu {
 	display: flex;
-	flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
 	padding-left: 10px;
 	padding-right: 50px;	
-	flex-wrap: wrap;
-
+	max-height: 200px;
+}
+#footer-menu >* {
+        flex: 1 1 1rem;
+    }
+#footer-menu a {
+	text-decoration: none;
+	color: white;}
+#footer-menu a:hover {
+color: hsl(12, 88%, 59%);
 }
 
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-
+/*
 .bg-oval {
     z-index: -1;
     position: absolute;
     width: 1000px;
 }
-
-p {
-font-size: 1rem;
-
-}
+*/
 
 
 footer .row {
@@ -331,12 +335,15 @@ footer .column {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  height: 100px;
+  height: 100%;
 }
 
 
 .icons-social ul li a {
-	width: 20px;}
+	width: 20px;
+	height: 20px;
+	text-decoration: none !important;
+}
 .icons-social ul li a:hover{
 	color: hsl(12, 88%, 59%);
 }
