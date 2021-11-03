@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="path-to-the-file/splide.min.js"></script>
 </head>
 <body>
   <header>
@@ -117,62 +118,24 @@
       </div>
         <div class="column" style="    justify-content: space-between; float:right"> 
           <div class="row news-input">
-           <input type="text" placeholder="Updates in your inbox…">  </input>
-           <a href="/" class="button"> Go </a>
+          <form  id="news-input">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Updates in your inbox…">
+          </form>
+          <button type="submit" form="news-input" value="Submit"> Go </button>
           </div>
-          <div class="row attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Your Name Here</a>.
-            Copyright 2020. All Rights Reserved
+          <div class="row" style="align-content: center;">
+            <p class="att" style="width: 100%;">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> | 
+            Coded by <a href="https://github.com/anapimolodec/">anapimolodec </a> | 
+            Copyright 2020. All Rights Reserved </p>
           </div>
     </div>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- 
-    
-
-
-
-   
-    <div id="newsletter">
-      <div class="news-wrap">
-        <div class="news-input">
-         <input type="text" placeholder="Updates in your inbox…">  </input>
-         <a href="/" class="button"> Go </a>
-        </div>
-        
-      </div>
-
-    </div>
-    <div id="menu-footer">
-      <ul>
-        <li> Home </li>
-        <li> Pricing </li>
-        <li> Products </li>
-        <li> About Us </li>
-        <li> Careers </li>
-        <li> Community </li>
-        <li> Privacy Policy </li>
-      </ul>
-    </div>
-    
-
-  </footer>
     <img src="./images/bg-tablet-pattern.svg" class = "bg-oval" style="top:-5%; right: -5%"/>
     <img src="./images/bg-tablet-pattern.svg" class = "bg-oval" style="top: 110% ; left: -30%"/>
  -->
-  
+   -->
 </body>
 </html>

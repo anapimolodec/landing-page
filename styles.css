@@ -10,7 +10,24 @@ html, body {
     margin: 0;
     height: 100%;
 }
-
+body:before {
+	content: url("./images/bg-tablet-pattern.svg");
+	  z-index: -1;
+    position: absolute;
+    width: 814px;
+    top: -30%;
+    right: -10%;
+    overflow-x: visible;
+}
+footer:before {
+	content: url("./images/bg-tablet-pattern.svg");
+	z-index: -1;
+    position: absolute;
+    width: 814px;
+    top: 180%;
+    left: -40%;
+    overflow-x: visible;
+}
 header {
 	margin:  10vw;
 	display: flex;
@@ -42,6 +59,7 @@ a.button {
 	font-weight: 700;
 	padding: 10px 30px;
 	text-decoration: none;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 a.button:hover{
@@ -165,7 +183,8 @@ ol li::before {
 	height: fit-content;
 }
 .testimonials::-webkit-scrollbar {
-    width: 3px;
+    width: 0px;
+    display: none;
 }
 .testimonials::-webkit-scrollbar-thumb {
   background-color: hsl(0, 0%, 98%);
@@ -230,17 +249,29 @@ blockquote {
 	justify-content: space-between;
 	padding-right: 10vw;
     padding-left: 10vw;
+
  
 }
+/*.quote:before {
+
+	content: url("./images/bg-tablet-pattern.svg");
+	z-index: -1;
+    position: absolute;
+    width: 814px;
+    top: 0px;
+    left: 0px;
+    overflow-x: visible;
+}
+*/
 
 .bg-pattern {
-	background: 
-    linear-gradient(
-      hsl(12, 88%, 59%), 
-      hsl(12, 88%, 59%)
-    )    
-    ,
-   url('./images/bg-tablet-pattern.svg');
+	background: linear-gradient(
+      rgba(242,95,58,0.5),
+      rgba(242,95,58,0.5)
+    ),
+    url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Crect width='436' height='970' x='774' y='-62' fill='hsl(13, 100%, 96%)' fill-rule='evenodd' rx='218' transform='rotate(45 718.814 -291.157)'/%3E%3C/svg%3E" )
+      ;
+   
 }
 .quote p {
 	font-size: 2rem;
@@ -275,17 +306,19 @@ input:focus{
     color:  hsl(227, 12%, 61%);
 }
 
-#newsletter {
-	width: 25%;
-	height: inherit;
-	display: table-cell;
-	text-align: center;
-	direction: ltr;
-	
+button {
+	background-color:hsl(12, 88%, 59%);
+	color: white;	
+	border-radius: 100px ;
+	font-weight: 700;
+	padding: 10px 30px;
+	text-decoration: none;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	border: 0px;
 }
-#newsletter .news-wrap {
-	display: flex;
-	flex-direction: column;
+
+button:hover{
+	background-color: #f98f75;
 
 }
 .news-input {
@@ -312,8 +345,6 @@ color: hsl(12, 88%, 59%);
 }
 
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
 /*
 .bg-oval {
     z-index: -1;
@@ -352,4 +383,13 @@ svg {
 }
 svg:hover {
 	fill: hsl(12, 88%, 59%);
+}
+
+
+.att, .att *{ color:  hsl(227, 12%, 61%);font-size: 11px; text-align: right; }
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: lightblue;
+  }
 }
